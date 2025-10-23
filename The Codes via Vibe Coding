@@ -1,0 +1,37 @@
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '@/hooks/useAuth';
+import { Button } from '@/components/ui/button';
+import { Heart } from 'lucide-react';
+
+const Index = () => {
+  const { user, isLoading } = useAuth();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (user && !isLoading) {
+      navigate('/dashboard');
+    }
+  }, [user, isLoading, navigate]);
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-primary/20 via-secondary/10 to-accent/20 flex items-center justify-center p-4">
+      <div className="text-center max-w-2xl">
+        <div className="mb-8 flex justify-center">
+          <Heart className="h-20 w-20 text-primary animate-pulse" />
+        </div>
+        <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+          Intimacy Habit Tracker
+        </h1>
+        <p className="text-xl text-muted-foreground mb-8">
+          Build meaningful self-care habits. Track your progress. Celebrate your journey.
+        </p>
+        <Button size="lg" onClick={() => navigate('/auth')} className="text-lg px-8 py-6">
+          Get Started
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+export default Index;
