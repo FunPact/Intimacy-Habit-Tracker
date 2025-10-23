@@ -22,11 +22,16 @@
 1. Clone the repository
 
 git clone:https://github.com/FunPact/intimacy-habit-tracker.git
+
 2. Install dependencies
 npm install or yarn install
-3. Configure environment variables for auth and database connections
-4. Run the development server
-5. Open your browser at http://localhost:3000
+
+4. Configure environment variables for auth and database connections
+
+5. Run the development server
+   
+6. Open your browser at http://localhost:3000
+
 ## Future Plans
 - Integrating Flow Blockchain (Testnet) to mint token rewards using Flow Client Library (FCL)
 - Deploying Cadence smart contracts for on-chain milestone tracking
