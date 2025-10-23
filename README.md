@@ -14,7 +14,17 @@
 - Lucide-react icons
 ## Tools Used
 - **Lovable AI** for rapid full-stack scaffold of the habit tracker app via natural language prompts.
-- **Perplexity AI** to generate structured JSON-based prompts that guided the precise specifications for Lovable AI. This helped ensure clear, consistent, and machine-readable instructions for building the app's features efficiently.
+- **Perplexity AI** to generate structured JSON-based prompts that guided the precise specifications for Lovable AI & Cursor AI. This helped ensure clear, consistent, and machine-readable instructions for building the app's features efficiently.
+  
+- **Cursor AI** played a crucial role in integrating Flow blockchain functionalities into this repository. By connecting directly to the GitHub repository, Cursor AI:
+1. Automatically added and committed Flow Client Library (FCL) setup and configuration.
+2. Created React wallet connection components and hooks for seamless Flow wallet integration.
+3. Generated Cadence smart contract templates and deployment scripts for token minting.
+4. Implemented efficient minting logic triggered by habit streak milestones with real-time transaction feedback.
+5. Enhanced existing UI components with blockchain interaction features.
+6. Managed environment configuration and provided detailed code comments for maintainability.
+
+This end-to-end AI-assisted development approach accelerated implementation, ensured adherence to best practices, and facilitated a smooth blockchain integration workflow. Cursor’s ability to understand repository context and make precise code changes directly on GitHub made it an indispensable tool for this project.
 ### Prerequisites
 - Node.js (v16+ recommended)
 - Yarn or npm
