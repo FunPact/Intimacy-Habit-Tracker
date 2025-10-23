@@ -42,6 +42,6 @@ npm install or yarn install
    
 6. Open your browser at http://localhost:3000
 
-## Future Plans
+## Future Plans (Working on it)
 - Integrating Flow Blockchain (Testnet) to mint token rewards using Flow Client Library (FCL)
 - Deploying Cadence smart contracts for on-chain milestone tracking
